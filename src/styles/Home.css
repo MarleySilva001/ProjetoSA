@@ -1,0 +1,35 @@
+#quadrado{
+    display: flex;
+    gap: 30px;
+}
+
+#foto-home{
+    width: 400px;
+    height: 400px;
+    border-radius: 4%;
+    border: 2px solid rgb(119, 119, 119);
+    box-shadow: 5px 5px 6px rgb(119, 119, 119);
+
+}
+
+#fotoPerfil{
+    width: 35px;
+    height: 25px;
+}
+
+@media screen and (max-width: 600px){
+    #quadrado{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+    }
+    
+    #foto-home{
+        width: 300px;
+        height: 300px;
+        border-radius: 4%;
+        border: 2px solid rgb(119, 119, 119);
+        box-shadow: 5px 5px 6px rgb(119, 119, 119);
+    
+    }
+}

@@ -1,0 +1,115 @@
+
+.bt01{
+    background-color: rgb(18, 101, 209);
+}
+.bts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+gap: 10px;
+}
+.logo1{
+    width: 600px;
+}
+.boton-elegante2 {
+    padding: 10px 30px;
+    border: 2px solid #2c2c2c;
+    background-color: rgb(18, 101, 209);;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+   width: 400px;
+  }
+  
+  .boton-elegante2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(234, 240, 245, 0.25) 0%,
+      rgba(17, 53, 255, 0) 70%
+    
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .boton-elegante2:hover::after {
+    transform: scale(4);
+     align-items: center;
+  }
+  
+  .boton-elegante2:hover {
+    border-color: #ffffff;
+    background: rgb(18, 101, 209);
+    
+  }
+
+  @media screen and (max-width: 600px){
+    *{
+      margin: 0;
+    }
+    .sac1{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+    
+    body img{
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 27vh;
+      width: 80vw;
+    }
+    .login-box{
+      width: 80vw;
+  
+      
+    }
+    .b{
+      height: 7vh;
+      width: 80vw;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .bts{
+      margin-bottom: 20px;
+    }
+
+    footer img{
+      display: flex;
+      justify-content:end;
+      align-items: center;
+      height: 20px;
+      width: 20px;
+    }
+
+    .boton-elegante2 {
+      padding: 16px 30px;
+      border: 2px solid #2c2c2c;
+      background-color: rgb(18, 101, 209);;
+      color: #ffffff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: all 0.4s ease;
+      outline: none;
+      position: relative;
+      overflow: hidden;
+      font-weight: bold;
+     width: 300px;
+    }
+  }
