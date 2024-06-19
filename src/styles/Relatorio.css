@@ -1,0 +1,107 @@
+.relatorioCentro {
+    width: 97vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.relatorioCentro h1 {
+    text-decoration: underline 3px;
+    font-size: 44px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+.relatorioQuadrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px;
+    width: 36vw;
+    padding: 0px;
+}
+
+.relatorioTipo {
+    display: flex;
+    width: 36vw;
+    border-bottom: 1px solid;
+}
+
+.relatorioTipo button {
+    margin: 10px 0px 0px 0px;
+    border-style: none;
+    padding: 10px 173px 10px 0px;
+}
+
+.relatorioTipo button:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.relatorios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 10px 0px;
+}
+
+.relatorioConteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.relatorioConteudo img {
+    width: 50px;
+}
+
+.conteudoTitulo {
+    font-size: 18px;
+    margin: 8px 0px;
+}
+
+.conteudoP {
+    font-size: 12px;
+    margin: 8px 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .relatorioQuadrado {
+        display: flex;
+        width: 80vw;
+    }
+
+    .relatorioCentro h1{
+        font-size: 30px;
+    }
+
+    .relatorioConteudo img {
+        margin: 0px;
+        height: 50px;
+    }
+
+    .conteudoTitulo{
+        font-size: 15px;
+    }
+
+    .conteudoP{
+        font-size: 11px;
+    }
+
+    .relatorioTipo {
+        width: 80vw;
+    }
+
+    .relatorioTipo button {
+        margin: 10px 0px 0px 0px;
+        border-style: none;
+        padding: 10px 87px 10px 0px;
+    }
+}

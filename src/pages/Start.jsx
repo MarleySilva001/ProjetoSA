@@ -10,8 +10,10 @@ import LogoStart from '../components/StartLogo';
 export default function Start () {
     return(
         <>
+        <div id='login'>
         <LogoStart />
         <BotaoLogin />
+        </div>
         </>
     )
 }

@@ -1,0 +1,10 @@
+.notTudo {
+    display: flex;
+    gap: 10px;
+    width: 100vw;
+    align-items: center;
+}
+
+.notTudo img {
+    width: 200px;
+}

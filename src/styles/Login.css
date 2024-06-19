@@ -1,19 +1,28 @@
-.logo{
+.logo {
   display: flex;
   height: 120px;
   align-items: center;
   justify-content: center;
 }
-*{
+
+* {
   box-sizing: border-box;
 }
 
-footer img{
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+footer img {
   width: 15px;
   height: 15px;
 }
 
-header img{
+header img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,9 +31,10 @@ header img{
 }
 
 .boton-elegante {
-  padding: 10px 30px;
+  padding: 10px 20px;
   border: 2px solid #2c2c2c;
-  background-color: rgb(18, 101, 209);;
+  background-color: rgb(18, 101, 209);
+  ;
   color: #ffffff;
   font-size: 1.2rem;
   cursor: pointer;
@@ -34,7 +44,7 @@ header img{
   position: relative;
   overflow: hidden;
   font-weight: bold;
- width: 400px;
+  width: 400px;
 }
 
 .boton-elegante::after {
@@ -44,29 +54,30 @@ header img{
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    circle,
-    rgba(234, 240, 245, 0.25) 0%,
-    rgba(17, 53, 255, 0) 70%
-  
-  );
+  background: radial-gradient(circle,
+      rgba(234, 240, 245, 0.25) 0%,
+      rgba(17, 53, 255, 0) 70%);
   transform: scale(0);
   transition: transform 0.5s ease;
 }
 
 .boton-elegante:hover::after {
   transform: scale(4);
-   align-items: center;
+  align-items: center;
 }
 
 .boton-elegante:hover {
   border-color: #ffffff;
   background: rgb(18, 101, 209);
-  
+
 }
 
 .login-box .user-box {
   position: relative;
+}
+
+.login-box {
+  width: 500px;
 }
 
 .login-box .user-box input {
@@ -74,7 +85,7 @@ header img{
   padding: 10px 0;
   font-size: 16px;
   color: rgb(0, 0, 0);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: none;
   border-bottom: 1px solid #000000;
   outline: none;
@@ -92,13 +103,13 @@ header img{
   transition: .5s;
 }
 
- .login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
   top: -20px;
   left: 0;
   color: #bdb8b8;
   font-size: 12px;
-} 
+}
 
 .login-box form a {
   position: relative;
@@ -113,45 +124,100 @@ header img{
   margin-top: 40px;
   letter-spacing: 4px
 }
-.b{
+
+.centro {
   display: flex;
   justify-content: center;
 }
 
-@media screen and (max-width: 600px){
-  *{
+.centro2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.API {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 400px;
+  height: 30px;
+  border: 1px solid;
+}
+
+.API:hover {
+  background-color: #f1f1f1;
+}
+
+.API img {
+  width: 20px;
+  height: 20px;
+}
+
+.esqueceSenha:hover {
+  color: rgb(0, 110, 255);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  * {
     margin: 0;
   }
-  .sac1{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  
-  body img{
-    top: 0;
+
+
+  body img {
+    margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 33vh;
+    height: 30vh;
     width: 80vw;
   }
-  .login-box{
-    width: 80vw;
 
-    
+  #user {
+    padding: 5px 0px;
   }
-  .b{
+
+  #senha {
+    padding: 5px 0px;
+  }
+
+  .boton-elegante {
+    width: 75vw;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+  }
+
+  .b {
     height: 7vh;
     width: 80vw;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    
+
   }
-  footer img{
+
+  .centro2 {
+    margin: 10px 0px;
+    height: 80px;
+  }
+
+  .centro2 img {
+    margin: 0px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .API {
+    height: 36px;
+    width: 70vw;
+  }
+
+  footer img {
     display: flex;
-    justify-content:end;
+    justify-content: end;
     align-items: center;
     height: 20px;
     width: 20px;
